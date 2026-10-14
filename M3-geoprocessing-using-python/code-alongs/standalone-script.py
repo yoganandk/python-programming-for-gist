@@ -96,7 +96,7 @@ for dataset_name, distance in buffer_distances.items():
         output_name = build_output_name(dataset_name, initials)
 
         # Execute the Buffer tool
-        # TODO: Fix bug
+        # TODO: Fix bug - dataset_name needs a full path (input_path)
         # Use the full path (input_path), not just the dataset name
         buffer_result = arcpy.analysis.Buffer(
             dataset_name, output_name, distance
